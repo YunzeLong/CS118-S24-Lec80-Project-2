@@ -1,2 +1,2 @@
-Please concisely describe your congestion control scheme here.
-No need to be verbose, brief descriptions/bullet points are preferred.
+Please concisely describe your design of reliable data transfer, and any challenges you have overcome in the process. 
+Please don't be verbose, concise bullet-points are preferred.
