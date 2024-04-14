@@ -44,10 +44,7 @@ Options:
 - `--client_port <port>`: Port where the client is reachable.
 - `--server_port <port>`: Port where the server is reachable.
 - `--test_type <rd|cc>`: Choose 'rd' for random packet drop simulation or 'cc' for congestion control simulation. For this project, you will only ever use the 'rd' mode.
-- `--loss_rate <rate>`: The probability of packet loss in 'rd' mode - 0.0 is no loss and 1.0 is all loss.
-<!-- - `--token_rate <rate>`: The token refill rate for the TokenBucket in 'cc' mode.
-- `--token_capacity <capacity>`: The capacity of the TokenBucket in 'cc' mode.
-- `--queue_size <size>`: The maximum size of the queue in 'cc' mode. -->
+- `--loss_rate <rate>`: The probability of packet loss in 'rd' mode. e.g. 0.0 is no loss and 1.0 is all loss.
 - `--random_seed <seed>`: The random seed for packet loss simulation.
 - `--prop_delay <delay>`: The propagation delay in seconds.
 
@@ -77,7 +74,7 @@ Then, in a separate terminal, run the client providing the filename to upload (s
 
 ### Client (`client.c`)
 
-Implement the (potential) logic for:
+Implement the logic for:
 
 - Segmenting the file into packets.
 - Sending packets to the server implementing the reliable data transfer protocol.
