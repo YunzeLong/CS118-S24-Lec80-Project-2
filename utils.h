@@ -4,18 +4,20 @@
 #include <stdlib.h>
 #include <string.h>
 
-// MACROS
+// INVARIANT MACROS: Do not change any of the following fields
 #define SERVER_IP "127.0.0.1"
 #define LOCAL_HOST "127.0.0.1"
 #define SERVER_PORT_TO 5002
 #define CLIENT_PORT 6001
 #define SERVER_PORT 6002
 #define CLIENT_PORT_TO 5001
-#define PAYLOAD_SIZE 1024
-#define WINDOW_SIZE 5
-#define TIMEOUT 2
-#define MAX_SEQUENCE 1024
 
+// FLEXIBLE MACROS: You may change the following fields if you want to, although it is not required
+#define PAYLOAD_SIZE 1024
+#define MAX_SEQUENCE 1024
+#define TIMEOUT 0.5
+
+// You may add more macros below if you want to
 
 
 // Packet Layout
@@ -39,7 +41,7 @@ void build_packet(struct packet* pkt, unsigned short seqnum, unsigned short ackn
     memcpy(pkt->payload, payload, length);
 }
 
-// Utility function to print a packet
+// Utility function to print a packet, these are provided here to help you debug, you are not required to use them
 void printRecv(struct packet* pkt) {
     printf("RECV %d %d%s%s\n", pkt->seqnum, pkt->acknum, pkt->last ? " LAST": "", (pkt->ack) ? " ACK": "");
 }
