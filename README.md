@@ -1,6 +1,6 @@
 # CS 118 Course Project 2 - Reliable Data Transfer over lossy links
 
-**WARNING**: This README is provided as supplementary documentation to assist with the setup and execution of the course project. It does not replace the official project specification. Please refer to the official project specification for detailed requirements and instructions. In case of any discrepancies or ambiguities, the official project specification takes precedence.
+**Note**: This README is provided as supplementary documentation to assist with the setup and execution of the course project. It does not replace the official project specification. Please refer to the official project specification for detailed requirements and instructions. In case of any discrepancies or ambiguities, the official project specification takes precedence.
 
 ## Overview
 
