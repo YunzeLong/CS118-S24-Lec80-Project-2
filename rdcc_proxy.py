@@ -130,7 +130,7 @@ if __name__ == '__main__':
     parser.add_argument('--token_capacity', '-b', type=int, default=1)
     parser.add_argument('--queue_size', '-q', type=int, default=30)
     parser.add_argument('--random_seed', '-r', type=int, default=0)
-    parser.add_argument('--prop_delay', '-p', type=float, default=0.05)
+    parser.add_argument('--prop_delay', '-p', type=float, default=0.01)
     
     args = parser.parse_args()
     main()
